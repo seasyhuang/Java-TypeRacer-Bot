@@ -61,17 +61,23 @@ public class typeRacerBot {
 		}
 	}
 	
-public void practice() {
+	public void practice() {
 		
 		try {
 			
-			
+			Thread.sleep(1000);
 			WebElement practice = driver.findElement(By.xpath("//a[text()='Practice']"));
 			practice.click();
 			
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+	}
+	
+	public void getLetter() {
+		
+		String letter = "//span[@unselectable='on']";
+		
 	}
 	
 	
